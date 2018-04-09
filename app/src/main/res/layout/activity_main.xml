@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.iqquiz2.MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headerBackgroundColor"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Chronometer
+                android:id="@+id/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/buttonTextColor"
+                android:textSize="@dimen/chronometerTextSize"
+                android:textStyle="bold"
+                />
+
+            <ImageButton
+                android:id="@+id/goToSplashPage"
+                android:src="@drawable/home_hdpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:background="@color/headerBackgroundColor"
+                />
+
+            <ImageButton
+                android:id="@+id/goToResultsPage"
+                android:src="@drawable/check_circle_hdpi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/headerBackgroundColor"
+                android:layout_marginRight="@dimen/imageButtonMarginRight"
+            />
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headerBackgroundColor"
+        app:tabTextColor="@color/buttonTextColor"
+        app:tabMode="fixed"
+        app:tabGravity="fill"
+        >
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

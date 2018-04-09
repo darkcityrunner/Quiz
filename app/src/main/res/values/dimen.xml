@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- margins -->
+    <dimen name="questionTopMargin">10dp</dimen>
+    <dimen name="questionLeftMargin">30dp</dimen>
+    <dimen name="questionRightMargin">30dp</dimen>
+    <dimen name="radioGroupTopMargin">10dp</dimen>
+    <dimen name="toastTopMargin">20dp</dimen>
+    <dimen name="toastLeftMargin">30dp</dimen>
+    <dimen name="toastRightMargin">30dp</dimen>
+    <dimen name="toastBottomMargin">20dp</dimen>
+    <dimen name="checkBoxLeftMargin">125dp</dimen>
+    <dimen name="checkBoxRightMargin">50dp</dimen>
+    <dimen name="cardCornerRadius">20dp</dimen>
+    <dimen name="toastPerfectScoreHeight">150dp</dimen>
+    <dimen name="toastPerfectOuterCardMargin">25dp</dimen>
+    <dimen name="toastPerfectScoreInnerCardMargin">15dp</dimen>
+    <dimen name="toastPerfectScoreImageViewLeft">15dp</dimen>
+    <dimen name="toastPerfectScoreImageViewRight">15dp</dimen>
+    <dimen name="fragmentCardMargin">10dp</dimen>
+    <dimen name="textViewLeftMargin">20dp</dimen>
+    <dimen name="lineSeparatorHeight">1dp</dimen>
+    <dimen name="lineSeparatorRightLeft">8dp</dimen>
+
+    <!-- text -->
+    <dimen name="standardQuestionTextSize">30sp</dimen>
+    <dimen name="longQuestionTextSize">25sp</dimen>
+    <dimen name="radioButtonTextSize">20sp</dimen>
+
+    <!-- images -->
+    <dimen name="waterContainersLayoutWidth">300dp</dimen>
+    <dimen name="waterContainersLayoutHeight">210dp</dimen>
+    <dimen name="waterContainerstopMargin">10dp</dimen>
+
+    <dimen name="linesLayoutWidth">300dp</dimen>
+    <dimen name="linesLayoutHeight">180dp</dimen>
+    <dimen name="linestopMargin">20dp</dimen>
+
+    <!-- Section: SPLASH PAGE DIMENSIONS -->
+    <!-- brain image view -->
+    <dimen name="brainLayoutHeight">350dp</dimen>
+    <dimen name="brainPaddingTop">30dp</dimen>
+    <dimen name="brainPaddingBottom">30dp</dimen>
+    <dimen name="brainTeasersTop">15dp</dimen>
+    <dimen name="brainTeasersBottom">10dp</dimen>
+    <dimen name="brainTeasersHeight">80dp</dimen>
+    <dimen name="brainTeasersMarginLeft">10dp</dimen>
+    <dimen name="brainTeasersMarginRight">10dp</dimen>
+
+    <!-- buttons -->
+    <dimen name="splashPageButtonMargin">15dp</dimen>
+    <dimen name="splashPageButtonLayoutWidth">80dp</dimen>
+    <dimen name="splashPageButtonLinearLayoutTopMargin">25dp</dimen>
+    <dimen name="splashPageButtonLinearLayoutBottomMargin">20dp</dimen>
+    <dimen name="buttonTextSize">16sp</dimen>
+    <dimen name="submitAnswerButtonTopMargin">5dp</dimen>
+    <dimen name="submitAnswerButtonBottomMargin">15dp</dimen>
+    <dimen name="submitAnswerButtonPaddingLeft">10dp</dimen>
+    <dimen name="submitAnswerButtonPaddingRight">10dp</dimen>
+
+    <!-- text -->
+    <dimen name="splashPageTitleTextSize">55sp</dimen>
+    <dimen name="splashPageSubtitleTextSize">22sp</dimen>
+    <dimen name="splashPageTitleTopMargin">30dp</dimen>
+    <dimen name="splashPageSubtitleTopMargin">10dp</dimen>
+
+    <!-- Section: Activity Main Page -->
+    <dimen name="chronometerTextSize">22sp</dimen>
+    <dimen name="imageButtonMarginRight">15dp</dimen>
+
+    <!-- Section: Results Page -->
+    <dimen name="resultsPageQuestionTextSize">20sp</dimen>
+    <dimen name="resultsPageHeaderTopMargin">15sp</dimen>
+    <dimen name="resultsPageHeaderBottomMargin">15sp</dimen>
+
+    <!-- Section: Dialog Page -->
+    <dimen name="dialogTextViewTop">15dp</dimen>
+    <dimen name="dialogTextViewBottom">15dp</dimen>
+    <dimen name="dialogTextViewLeft">35dp</dimen>
+    <dimen name="dialogTextViewRight">35dp</dimen>
+    <dimen name="dialogButtonLayoutWidth">80dp</dimen>
+    <dimen name="dialogButtonLayoutHeight">40dp</dimen>
+    <dimen name="dialogButtonOuterMargin">30dp</dimen>
+    <dimen name="dialogButtonInnerMargin">15dp</dimen>
+    <dimen name="dialogLinearLayoutTop">20dp</dimen>
+    <dimen name="dialogLinearLayoutBottom">20dp</dimen>
+
+
+</resources>

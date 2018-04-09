@@ -1,0 +1,365 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.android.iqquiz2.VerbalQuestions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardViewBackgroundColor"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="@dimen/cardCornerRadius"
+            android:layout_marginTop="@dimen/fragmentCardMargin"
+            android:layout_marginLeft="@dimen/fragmentCardMargin"
+            android:layout_marginRight="@dimen/fragmentCardMargin"
+            >
+
+            <LinearLayout
+                android:id="@+id/verbalQuestion1_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/splashPageBackgroundColor"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:text="@string/verbalQuestion1Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/questionTextColor"
+                    android:layout_marginTop="@dimen/questionTopMargin"
+                    android:layout_marginLeft="@dimen/questionLeftMargin"
+                    android:layout_marginRight="@dimen/questionRightMargin"
+                    android:textSize="@dimen/longQuestionTextSize"
+                    />
+
+                <EditText
+                    android:id="@+id/verbalQuestion1_FragmentInput"
+                    android:hint="@string/verbalQuestion1HintText"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/questionTopMargin"
+                    android:layout_marginLeft="@dimen/questionLeftMargin"
+                    android:layout_marginRight="@dimen/questionRightMargin"
+                    android:layout_marginBottom="@dimen/questionTopMargin"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/fragmentCardMargin"
+            android:layout_marginLeft="@dimen/fragmentCardMargin"
+            android:layout_marginRight="@dimen/fragmentCardMargin"
+            card_view:cardCornerRadius="@dimen/cardCornerRadius"
+            >
+
+            <LinearLayout
+                android:id="@+id/verbalQuestion2_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/splashPageBackgroundColor"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:text="@string/verbalQuestion2Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/longQuestionTextSize"
+                    android:layout_marginTop="@dimen/questionTopMargin"
+                    android:layout_marginLeft="@dimen/questionLeftMargin"
+                    android:layout_marginRight="@dimen/questionRightMargin"
+                    android:textColor="@color/questionTextColor"
+                    />
+
+                <TextView
+                    android:text="@string/verbalQuestion2Word1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/radioButtonTextSize"
+                    android:layout_marginTop="@dimen/questionTopMargin"
+                    android:layout_marginLeft="@dimen/checkBoxLeftMargin"
+                    android:textColor="@color/questionTextColor"
+                    />
+
+                <EditText
+                    android:id="@+id/verbalQuestion2_FragmentInput"
+                    android:hint="@string/verbalQuestion2HintText"
+                    android:inputType="textCapCharacters"
+                    android:imeOptions="actionDone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/checkBoxLeftMargin"
+                    android:layout_marginRight="@dimen/checkBoxLeftMargin"
+                    />
+
+                <TextView
+                    android:text="@string/verbalQuestion2Word2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/checkBoxLeftMargin"
+                    android:textSize="@dimen/radioButtonTextSize"
+                    android:textColor="@color/questionTextColor"
+                    />
+
+                <TextView
+                    android:text="@string/verbalQuestion2Word3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/checkBoxLeftMargin"
+                    android:textSize="@dimen/radioButtonTextSize"
+                    android:textColor="@color/questionTextColor"
+                    android:layout_marginBottom="@dimen/questionTopMargin"
+                    />
+
+                </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/fragmentCardMargin"
+            android:layout_marginLeft="@dimen/fragmentCardMargin"
+            android:layout_marginRight="@dimen/fragmentCardMargin"
+            card_view:cardCornerRadius="@dimen/cardCornerRadius"
+            >
+
+            <LinearLayout
+                android:id="@+id/verbalQuestion3_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/splashPageBackgroundColor"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:text="@string/verbalQuestion3Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/questionLeftMargin"
+                    android:layout_marginRight="@dimen/questionRightMargin"
+                    android:layout_marginTop="@dimen/questionTopMargin"
+                    android:textColor="@color/questionTextColor"
+                    android:textSize="@dimen/longQuestionTextSize"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/verbalQuestion3_Frag_RadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/radioGroupTopMargin"
+                    android:layout_marginBottom="@dimen/questionTopMargin"
+                    >
+                    <RadioButton
+                        android:id="@+id/verbalQuestion3_Frag_Button1"
+                        android:text="@string/verbalQuestion3RadioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/radioButtonTextSize"
+                        android:textColor="@color/questionTextColor"
+                        />
+                    <RadioButton
+                        android:id="@+id/verbalQuestion3_Frag_Button2"
+                        android:text="@string/verbalQuestion3RadioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/radioButtonTextSize"
+                        android:textColor="@color/questionTextColor"
+                        />
+                    <RadioButton
+                        android:id="@+id/verbalQuestion3_Frag_Button3"
+                        android:text="@string/verbalQuestion3RadioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/radioButtonTextSize"
+                        android:textColor="@color/questionTextColor"
+                        />
+                    <RadioButton
+                        android:id="@+id/verbalQuestion3_Frag_Button4"
+                        android:text="@string/verbalQuestion3RadioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/radioButtonTextSize"
+                        android:textColor="@color/questionTextColor"
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/fragmentCardMargin"
+            android:layout_marginLeft="@dimen/fragmentCardMargin"
+            android:layout_marginRight="@dimen/fragmentCardMargin"
+            card_view:cardCornerRadius="@dimen/cardCornerRadius"
+            >
+
+            <LinearLayout
+                android:id="@+id/verbalQuestion4_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/splashPageBackgroundColor"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:text="@string/verbalQuestion4Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/longQuestionTextSize"
+                    android:layout_marginTop="@dimen/questionTopMargin"
+                    android:layout_marginLeft="@dimen/questionLeftMargin"
+                    android:layout_marginRight="@dimen/questionRightMargin"
+                    android:textColor="@color/questionTextColor"
+                    />
+
+                <CheckBox
+                    android:id="@+id/verbalQuestion4_CheckBox1"
+                    android:text="@string/verbalQuestion4CheckBox1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/radioGroupTopMargin"
+                    android:layout_marginLeft="@dimen/checkBoxLeftMargin"
+                    android:textSize="@dimen/radioButtonTextSize"
+                    android:textColor="@color/questionTextColor"
+                    />
+
+                <CheckBox
+                    android:id="@+id/verbalQuestion4_CheckBox2"
+                    android:text="@string/verbalQuestion4CheckBox2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/checkBoxLeftMargin"
+                    android:textSize="@dimen/radioButtonTextSize"
+                    android:textColor="@color/questionTextColor"
+                    />
+
+                <CheckBox
+                    android:id="@+id/verbalQuestion4_CheckBox3"
+                    android:text="@string/verbalQuestion4CheckBox3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/checkBoxLeftMargin"
+                    android:textSize="@dimen/radioButtonTextSize"
+                    android:textColor="@color/questionTextColor"
+                    />
+
+                <CheckBox
+                    android:id="@+id/verbalQuestion4_CheckBox4"
+                    android:text="@string/verbalQuestion4CheckBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/checkBoxLeftMargin"
+                    android:textSize="@dimen/radioButtonTextSize"
+                    android:textColor="@color/questionTextColor"
+                    android:layout_marginBottom="@dimen/questionTopMargin"
+                    />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                android:layout_marginBottom="@dimen/fragmentCardMargin"
+            card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                >
+
+            <LinearLayout
+                android:id="@+id/verbalQuestion5_LinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/splashPageBackgroundColor"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                >
+
+                <TextView
+                    android:text="@string/verbalQuestion5Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/longQuestionTextSize"
+                    android:layout_marginTop="@dimen/questionTopMargin"
+                    android:layout_marginLeft="@dimen/questionLeftMargin"
+                    android:layout_marginRight="@dimen/questionRightMargin"
+                    android:textColor="@color/questionTextColor"
+                    />
+
+                <RadioGroup
+                    android:id="@+id/verbalQuestion5_Frag_RadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/radioGroupTopMargin"
+                    android:layout_marginBottom="@dimen/questionTopMargin"
+                    >
+                    <RadioButton
+                        android:id="@+id/verbalQuestion5_Frag_Button1"
+                        android:text="@string/verbalQuestion5RadioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/radioButtonTextSize"
+                        android:textColor="@color/questionTextColor"
+                        />
+                    <RadioButton
+                        android:id="@+id/verbalQuestion5_Frag_Button2"
+                        android:text="@string/verbalQuestion5RadioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/radioButtonTextSize"
+                        android:textColor="@color/questionTextColor"
+                        />
+                </RadioGroup>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            >
+
+            <Button
+                android:id="@+id/saveButton"
+                android:text="@string/submitAnswerButton"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textColor="@color/buttonTextColor"
+                android:background="@drawable/rounded_button"
+                android:textSize="@dimen/buttonTextSize"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/submitAnswerButtonTopMargin"
+                android:layout_marginBottom="@dimen/submitAnswerButtonBottomMargin"
+                android:paddingLeft="@dimen/submitAnswerButtonPaddingLeft"
+                android:paddingRight="@dimen/submitAnswerButtonPaddingRight"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

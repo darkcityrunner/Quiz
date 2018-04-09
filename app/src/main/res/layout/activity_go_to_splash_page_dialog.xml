@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.android.iqquiz2.MainActivity"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="20dp"
+    >
+
+        <!-- (Open) Yes / No horizontal row -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <!-- Return to splash page dialog window text -->
+            <TextView
+                android:id="@+id/goBackToSplashPageTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/dialogBackgroundColor"
+                android:textColor="@color/buttonTextColor"
+                android:textSize="@dimen/resultsPageQuestionTextSize"
+                android:gravity="center"
+                android:paddingTop="@dimen/dialogTextViewTop"
+                android:paddingBottom="@dimen/dialogTextViewBottom"
+                android:paddingLeft="@dimen/dialogTextViewLeft"
+                android:paddingRight="@dimen/dialogTextViewRight"
+                />
+
+            <!-- (Open) Yes / No horizontal row -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dialogLinearLayoutTop"
+                android:layout_marginBottom="@dimen/dialogLinearLayoutBottom"
+                >
+
+                <!-- Yes: return to splash page button -->
+                <Button
+                    android:id="@+id/goBackToSplashPage"
+                    android:text="@string/yesButton"
+                    android:layout_height="@dimen/dialogButtonLayoutHeight"
+                    android:layout_width="@dimen/dialogButtonLayoutWidth"
+                    android:textSize="@dimen/buttonTextSize"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/buttonTextColor"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginLeft="@dimen/dialogButtonOuterMargin"
+                    android:layout_marginRight="@dimen/dialogButtonInnerMargin"
+                    android:layout_weight="1"
+                    />
+
+                <!-- No: close dialog window button -->
+                <Button
+                    android:id="@+id/closeGoBackToSplashPageDialog"
+                    android:text="@string/cancelButton"
+                    android:layout_height="@dimen/dialogButtonLayoutHeight"
+                    android:layout_width="@dimen/dialogButtonLayoutWidth"
+                    android:textSize="@dimen/buttonTextSize"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/buttonTextColor"
+                    android:textStyle="bold"
+                    android:background="@drawable/rounded_button"
+                    android:layout_marginLeft="@dimen/dialogButtonInnerMargin"
+                    android:layout_marginRight="@dimen/dialogButtonOuterMargin"
+                    android:layout_weight="1"
+                    />
+
+            <!-- (Close) Yes / No horizontal row -->
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>

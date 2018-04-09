@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/toast_perfectScore_root"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toastPerfectScoreHeight"
+        card_view:cardCornerRadius="@dimen/cardCornerRadius"
+        card_view:cardBackgroundColor="@color/buttonColor"
+        android:layout_marginLeft="@dimen/toastPerfectOuterCardMargin"
+        android:layout_marginRight="@dimen/toastPerfectOuterCardMargin"
+        android:layout_marginTop="@dimen/toastPerfectOuterCardMargin"
+        android:layout_marginBottom="@dimen/toastPerfectOuterCardMargin"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            card_view:cardCornerRadius="@dimen/cardCornerRadius"
+            card_view:cardBackgroundColor="@color/splashPageBackgroundColor"
+            android:layout_marginLeft="@dimen/toastPerfectScoreInnerCardMargin"
+            android:layout_marginRight="@dimen/toastPerfectScoreInnerCardMargin"
+            android:layout_marginTop="@dimen/toastPerfectScoreInnerCardMargin"
+            android:layout_marginBottom="@dimen/toastPerfectScoreInnerCardMargin"
+            >
+
+            <ImageView
+                android:id="@+id/toast_perfectScore_ImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/toastPerfectScoreImageViewLeft"
+                android:layout_marginRight="@dimen/toastPerfectScoreImageViewRight"
+                android:scaleType="fitCenter"
+                />
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

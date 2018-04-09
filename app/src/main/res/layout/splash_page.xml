@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/splashPage"
+    >
+
+    <LinearLayout
+        android:id="@+id/layoutUpToDown"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/brainLayoutHeight"
+            android:background="@color/headerBackgroundColor"
+            android:paddingBottom="@dimen/brainPaddingBottom"
+            android:paddingTop="@dimen/brainPaddingTop"
+            android:scaleType="fitCenter"
+            android:src="@drawable/brain2" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutDownToUp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/splashPageBackgroundColor"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/brainTeasersHeight"
+            android:layout_marginBottom="@dimen/brainTeasersBottom"
+            android:layout_marginLeft="@dimen/brainTeasersMarginLeft"
+            android:layout_marginRight="@dimen/brainTeasersMarginRight"
+            android:layout_marginTop="@dimen/brainTeasersTop"
+            android:layout_weight="1"
+            android:requiresFadingEdge="none"
+            android:saveEnabled="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/brain_teasers" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtitleText"
+            android:textSize="@dimen/splashPageSubtitleTextSize"
+            android:textStyle="bold"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/splashPageButtonLinearLayoutTopMargin"
+            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/splashPageButtonLinearLayoutBottomMargin"
+            >
+            <Button
+                android:id="@+id/takeItSlowButton"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/splashPageButtonLayoutWidth"
+                android:text="@string/takeYourTimeButtonText"
+                android:textSize="@dimen/buttonTextSize"
+                android:textColor="@color/buttonTextColor"
+                android:background="@drawable/rounded_button"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/splashPageButtonMargin"
+                android:layout_marginRight="@dimen/splashPageButtonMargin"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/raceTheClock"
+                android:layout_height="wrap_content"
+                android:layout_width="@dimen/splashPageButtonLayoutWidth"
+                android:text="@string/raceTheClockButtonText"
+                android:textSize="@dimen/buttonTextSize"
+                android:textColor="@color/buttonTextColor"
+                android:background="@drawable/rounded_button"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/splashPageButtonMargin"
+                android:layout_marginRight="@dimen/splashPageButtonMargin"
+                android:layout_weight="1"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

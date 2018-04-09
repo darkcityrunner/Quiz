@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">IQQuiz2</string>
+
+    <!-- SPLASH PAGE TEXT -->
+    <string name="titleText">Brain Teasers!</string>
+    <string name="subtitleText">* let\'s give your brain a workout *</string>
+    <string name="takeYourTimeButtonText">Take Your Time</string>
+    <string name="raceTheClockButtonText">Race The Clock!</string>
+
+    <!-- RESULTS PAGE TEXT -->
+    <string name="timeTextView">Time:</string>
+    <string name="logicalQuestionsTextView">Logical Questions</string>
+    <string name="mathematicalQuestionsTextView">Mathematical Questions</string>
+    <string name="verbalQuestionsTextView">Verbal Questions</string>
+
+    <!-- BUTTON TEXT -->
+    <string name="submitAnswerButton">Save Answers</string>
+    <string name="yesButton">Yes</string>
+    <string name="cancelButton">Cancel</string>
+
+    <!-- TOAST MESSAGES TEXT -->
+    <string name="answerEveryQuestionToastMessage">You must answer every question!</string>
+    <string name="goodJobAnsweringAllQuestions">Good job!\n\nComplete each tab, then click the checkmark to see how you did.</string>
+
+    <!-- GO TO SPLASH PAGE DIALOG TEXT -->
+    <string name="goToSplashPageDialogTextFromQuiz">Are you sure you want to exit the quiz and return to the home page?  \n \nYour answers will be lost.</string>
+    <string name="goToSplashPageDialogTextFromResults">Thank you for playing!  \n \nClick Yes to return to the home page.</string>
+
+    <!-- LOGIC QUESTION 1 TEXT -->
+    <string name="logicalQuestion1Text">Complete the sequence: 2, 3, 3, 5, 10, 13, 39, 43, 172, 177, ?</string>
+    <string name="logicalQuestion1HintText">Enter the next number</string>
+
+    <!-- LOGIC QUESTION 2 TEXT -->
+    <string name="logicalQuestion2Text">There are a total of 10 bicycles and tricycles. If the total number of wheels is 24, how many are tricycles?</string>
+    <string name="logicalQuestion2RadioButton1">2</string>
+    <string name="logicalQuestion2RadioButton2">3</string>
+    <string name="logicalQuestion2RadioButton3">4</string>
+    <string name="logicalQuestion2RadioButton4">5</string>
+    <string name="logicalQuestion2RadioButton5">6</string>
+
+    <!-- LOGIC QUESTION 3 TEXT -->
+    <string name="logicalQuestion3Text">A box contains 2 coins. One coin is heads on both sides and the other is heads on one side and tails on the other. 1 coin is selected from the box at random and the face of 1 side is observed. If the face is heads what is the percent chance that the other side is heads?</string>
+    <string name="logicalQuestion3RadioButton1">25 percent</string>
+    <string name="logicalQuestion3RadioButton2">33 percent</string>
+    <string name="logicalQuestion3RadioButton3">50 percent</string>
+    <string name="logicalQuestion3RadioButton4">66 percent</string>
+    <string name="logicalQuestion3RadioButton5">88 percent</string>
+
+    <!-- LOGIC QUESTION 4 TEXT -->
+    <string name="logicalQuestion4Text">Which line is longer?</string>
+    <string name="logicalQuestion4RadioButton1">Line A is longer.</string>
+    <string name="logicalQuestion4RadioButton2">Line B is longer.</string>
+    <string name="logicalQuestion4RadioButton3">They are the same.</string>
+
+    <!-- LOGIC QUESTION 5 TEXT -->
+    <string name="logicalQuestion5Text">A bag of coffee beans costs $30 and contains 100 possible servings. Typical wastage averages 25%. For how much must the owner sell a cup of coffee to make 150% profit per bag?</string>
+    <string name="logicalQuestion5RadioButton1">$0.75</string>
+    <string name="logicalQuestion5RadioButton2">$1.00</string>
+    <string name="logicalQuestion5RadioButton3">$1.25</string>
+    <string name="logicalQuestion5RadioButton4">$2.00</string>
+    <string name="logicalQuestion5RadioButton5">None of the above.</string>
+
+    <!-- MATH QUESTION 1 TEXT -->
+    <string name="mathematicalQuestion1Text">200 percent more than 50 is:</string>
+    <string name="mathQuestion1RadioButton1">100</string>
+    <string name="mathQuestion1RadioButton2">150</string>
+    <string name="mathQuestion1RadioButton3">175</string>
+    <string name="mathQuestion1RadioButton4">200</string>
+    <string name="mathQuestion1RadioButton5">250</string>
+
+    <!-- MATH QUESTION 2 TEXT -->
+    <string name="mathematicalQuestion2Text">A basketball player shoots 33 percent from the foul line. How many shots must they take to make 100 baskets?</string>
+    <string name="mathQuestion2HintText">Enter the number of shots</string>
+
+    <!-- MATH QUESTION 3 TEXT -->
+    <string name="mathematicalQuestion3Text">When filled completely with water, which of these 2 cubes would hold the most liquid?</string>
+    <string name="mathQuestion3RadioButton1">Cube A would hold more.</string>
+    <string name="mathQuestion3RadioButton2">Cube B would hold more.</string>
+    <string name="mathQuestion3RadioButton3">Both cubes hold the same.</string>
+
+    <!-- MATH QUESTION 4 TEXT -->
+    <string name="mathematicalQuestion4Text">Two people can make 2 bicycles in 2 hours. How many people are needed to make 12 bicycles in 6 hours?</string>
+    <string name="mathQuestion4RadioButton1">2</string>
+    <string name="mathQuestion4RadioButton2">3</string>
+    <string name="mathQuestion4RadioButton3">4</string>
+    <string name="mathQuestion4RadioButton4">5</string>
+    <string name="mathQuestion4RadioButton5">6</string>
+
+    <!-- MATH QUESTION 5 TEXT -->
+    <string name="mathematicalQuestion5Text">A subway car passes an average of 3 stations every 10 minutes. At this rate, how many stations will it pass in 1 hour?</string>
+    <string name="mathQuestion5HintText">Enter the number of stations</string>
+
+    <!-- VERBAL QUESTION 1 TEXT -->
+    <string name="verbalQuestion1Text">In the English alphabet, how many letters are there between the letter B and the letter Z?</string>
+    <string name="verbalQuestion1HintText">Enter the number</string>
+
+    <!-- VERBAL QUESTION 2 TEXT -->
+    <string name="verbalQuestion2Text">What word will complete the transformation from FISH to LIST by changing only one letter in the word FISH?</string>
+    <string name="verbalQuestion2HintText">Enter in all caps</string>
+    <string name="verbalQuestion2Word1">FISH</string>
+    <string name="verbalQuestion2Word2">MIST</string>
+    <string name="verbalQuestion2Word3">LIST</string>
+
+    <!-- VERBAL QUESTION 3 TEXT -->
+    <string name="verbalQuestion3Text">The opposite of HETEROGENEOUS is?</string>
+    <string name="verbalQuestion3RadioButton1">Disparate</string>
+    <string name="verbalQuestion3RadioButton2">Varied</string>
+    <string name="verbalQuestion3RadioButton3">Incongruous</string>
+    <string name="verbalQuestion3RadioButton4">Identical</string>
+
+    <!-- VERBAL QUESTION 4 TEXT -->
+    <string name="verbalQuestion4Text">Which words below have a similar meaning to the word FALLIBLE?</string>
+    <string name="verbalQuestion4CheckBox1">Righteous</string>
+    <string name="verbalQuestion4CheckBox2">Imperfect</string>
+    <string name="verbalQuestion4CheckBox3">Unerring</string>
+    <string name="verbalQuestion4CheckBox4">Faulty</string>
+
+    <!-- VERBAL QUESTION 5 TEXT -->
+    <string name="verbalQuestion5Text">Can the word CERTIFY be spelled using only the letters found in the word ELECTRICITY?</string>
+    <string name="verbalQuestion5RadioButton1">Yes</string>
+    <string name="verbalQuestion5RadioButton2">No</string>
+
+    <!-- QUESTION ANSWERS -->
+    <string name="answerLogicalQuestion1">855</string>
+    <string name="answerLogicalQuestion2">4</string>
+    <string name="answerLogicalQuestion3">66 percent</string>
+    <string name="answerLogicalQuestion4">They are the same.</string>
+    <string name="answerLogicalQuestion5">$1.00</string>
+    <string name="answerMathematicalQuestion1">150</string>
+    <string name="answerMathematicalQuestion2">303</string>
+    <string name="answerMathematicalQuestion3">Cube B would hold more.</string>
+    <string name="answerMathematicalQuestion4">4</string>
+    <string name="answerMathematicalQuestion5">18</string>
+    <string name="answerVerbalQuestion1">23</string>
+    <string name="answerVerbalQuestion2">FIST</string>
+    <string name="answerVerbalQuestion3">Identical</string>
+    <string name="answer1VerbalQuestion4">Imperfect</string>
+    <string name="answer2VerbalQuestion4">Faulty</string>
+    <string name="answerVerbalQuestion5">No</string>
+
+
+</resources>

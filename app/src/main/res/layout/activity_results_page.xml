@@ -1,0 +1,1204 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.android.iqquiz2.ResultsPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/headerBackgroundColor">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/headerBackgroundColor"
+            >
+
+            <ImageButton
+                android:id="@+id/goToSplashPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/headerBackgroundColor"
+                android:src="@drawable/home_hdpi"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:id="@+id/timerHeader"
+                android:text="@string/timeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/questionTopMargin"
+                android:layout_marginLeft="@dimen/textViewLeftMargin"
+                android:layout_marginTop="@dimen/questionTopMargin"
+                android:textColor="@color/resultsPageHeaderTextColor"
+                android:textSize="@dimen/resultsPageQuestionTextSize"
+                android:layout_toRightOf="@+id/goToSplashPage"
+            />
+
+            <TextView
+                android:id="@+id/timerDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/questionTopMargin"
+                android:layout_marginLeft="@dimen/questionTopMargin"
+                android:layout_marginTop="@dimen/questionTopMargin"
+                android:textColor="@color/resultsPageHeaderTextColor"
+                android:textSize="@dimen/resultsPageQuestionTextSize"
+                android:layout_toRightOf="@+id/timerHeader"
+                />
+
+            <TextView
+                android:id="@+id/overallQuestionsScoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/questionTopMargin"
+                android:layout_marginTop="@dimen/questionTopMargin"
+                android:layout_marginRight="@dimen/textViewLeftMargin"
+                android:textColor="@color/resultsPageHeaderTextColor"
+                android:textSize="@dimen/resultsPageQuestionTextSize"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:background="@color/cardViewBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragmentCardMargin"
+                android:background="@color/cardViewBackgroundColor"
+                />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dialogBackgroundColor"
+                    >
+
+                    <TextView
+                        android:text="@string/logicalQuestionsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/resultsPageHeaderBottomMargin"
+                        android:paddingLeft="@dimen/textViewLeftMargin"
+                        android:paddingTop="@dimen/resultsPageHeaderTopMargin"
+                        android:textColor="@color/resultsPageHeaderTextColor"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        android:layout_alignParentLeft="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/logicalQuestionsScoreTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/resultsPageHeaderTextColor"
+                        android:paddingLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/textViewLeftMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        android:paddingTop="@dimen/resultsPageHeaderTopMargin"
+                        android:paddingBottom="@dimen/resultsPageHeaderBottomMargin"
+                        android:layout_alignParentRight="true"
+                        />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/logicalQuestion1_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/logicalQuestion1Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/logicalQuestion1_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/logicalquestion1_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/logicalQuestion2_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/logicalQuestion2Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/logicalQuestion2_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/logicalquestion2_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/logicalQuestion3_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/logicalQuestion3Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/logicalQuestion3_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/logicalquestion3_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/logicalQuestion4_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/logicalQuestion4Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/logicalQuestion4_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/logicalquestion4_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/logicalQuestion5_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/logicalQuestion5Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/logicalQuestion5_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/logicalquestion5_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dialogBackgroundColor"
+                    >
+
+                    <TextView
+                        android:text="@string/mathematicalQuestionsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/resultsPageHeaderTextColor"
+                        android:paddingLeft="@dimen/textViewLeftMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        android:paddingTop="@dimen/resultsPageHeaderTopMargin"
+                        android:paddingBottom="@dimen/resultsPageHeaderBottomMargin"
+                        android:layout_alignParentLeft="true"
+                    />
+
+                    <TextView
+                        android:id="@+id/mathQuestionsScoreTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/resultsPageHeaderTextColor"
+                        android:paddingLeft="@dimen/questionLeftMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        android:paddingTop="@dimen/resultsPageHeaderTopMargin"
+                        android:paddingBottom="@dimen/resultsPageHeaderBottomMargin"
+                        android:layout_marginRight="@dimen/textViewLeftMargin"
+                        android:layout_alignParentRight="true"
+                    />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/mathematicalQuestion1_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/mathematicalQuestion1Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/mathematicalQuestion1_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/mathematicalquestion1_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/mathematicalQuestion2_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/mathematicalQuestion2Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/mathematicalQuestion2_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/mathematicalquestion2_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/mathematicalQuestion3_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/mathematicalQuestion3Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/mathematicalQuestion3_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/mathematicalquestion3_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/mathematicalQuestion4_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/mathematicalQuestion4Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/mathematicalQuestion4_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/mathematicalquestion4_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                android:layout_marginBottom="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/mathematicalQuestion5_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/mathematicalQuestion5Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/mathematicalQuestion5_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/mathematicalquestion5_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/dialogBackgroundColor"
+                    >
+
+                    <TextView
+                        android:text="@string/verbalQuestionsTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/resultsPageHeaderTextColor"
+                        android:paddingLeft="@dimen/textViewLeftMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        android:paddingTop="@dimen/resultsPageHeaderTopMargin"
+                        android:paddingBottom="@dimen/resultsPageHeaderBottomMargin"
+                        android:layout_alignParentLeft="true"
+                    />
+
+                    <TextView
+                        android:id="@+id/verbalQuestionsScoreTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/resultsPageHeaderTextColor"
+                        android:paddingLeft="@dimen/questionLeftMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        android:paddingTop="@dimen/resultsPageHeaderTopMargin"
+                        android:paddingBottom="@dimen/resultsPageHeaderBottomMargin"
+                        android:layout_marginRight="@dimen/textViewLeftMargin"
+                        android:layout_alignParentRight="true"
+                    />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/verbalQuestion1_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/verbalQuestion1Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/verbalQuestion1_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/verbalquestion1_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/verbalQuestion2_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/verbalQuestion2Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/verbalQuestion2_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/verbalquestion2_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/verbalQuestion3_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/verbalQuestion3Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/verbalQuestion3_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/verbalquestion3_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/verbalQuestion4_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/verbalQuestion4Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/verbalQuestion4_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/verbalquestion4_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                card_view:cardCornerRadius="@dimen/cardCornerRadius"
+                android:layout_marginTop="@dimen/fragmentCardMargin"
+                android:layout_marginLeft="@dimen/fragmentCardMargin"
+                android:layout_marginRight="@dimen/fragmentCardMargin"
+                android:layout_marginBottom="@dimen/fragmentCardMargin"
+                >
+
+                <LinearLayout
+                    android:id="@+id/verbalQuestion5_LinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/splashPageBackgroundColor"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    >
+
+                    <TextView
+                        android:text="@string/verbalQuestion5Text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <!-- Separator 1 line -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/lineSeparatorHeight"
+                        android:layout_marginLeft="@dimen/lineSeparatorRightLeft"
+                        android:layout_marginRight="@dimen/lineSeparatorRightLeft"
+                        android:background="@color/resultsPageLineSeparatorColor"/>
+
+                    <TextView
+                        android:id="@+id/verbalQuestion5_UserAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                    <TextView
+                        android:id="@+id/verbalquestion5_CorrectAnswer_TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/questionTextColor"
+                        android:layout_marginTop="@dimen/questionTopMargin"
+                        android:layout_marginLeft="@dimen/questionLeftMargin"
+                        android:layout_marginRight="@dimen/questionRightMargin"
+                        android:layout_marginBottom="@dimen/questionTopMargin"
+                        android:textSize="@dimen/resultsPageQuestionTextSize"
+                        />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
+
